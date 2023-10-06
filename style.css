@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,100;9..40,700&family=Dancing+Script:wght@700&family=Fredoka:wght@700&family=Inconsolata:wght@300;600&family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@200;500;700&family=Reem+Kufi+Fun&family=Roboto:wght@100&family=Teko:wght@500&display=swap');
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Reem Kufi Fun', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+.item {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white 1px;
+    margin: 5px;
+    color: rgb(0, 255, 149);
+    font-weight: bold;
+}
+
+.fizz {
+    background-color: rgb(156, 156, 211);
+}
+
+.buzz {
+    background-color: rgba(14, 89, 16, 0.794);
+}
+
+.fizzbuzz {
+    background-color: rgb(197, 20, 20);
+}
