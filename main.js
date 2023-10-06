@@ -2,15 +2,27 @@
 //ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”. 
 //Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
+const container = document.getElementById("container");
+
 for (let i = 1; i <= 100; i++) {
+  let element = document.createElement("div");
+element.className ="item";  
  
     if (i % 3 == 0 && i % 5 == 0) {
-        console.log("FizzBuzz");
+        element.textContent = "FizzBuzz";
+        element.classList.add("fizzbuzz");
+        //console.log("FizzBuzz");
     } else if (i % 3 == 0) {
-        console.log("Fizz");
+        element.textContent = "Fizz";
+        element.classList.add("fizz");
+        //console.log("Fizz");
     } else if (i % 5 == 0) {
-        console.log("Buzz");
+        element.textContent = "Buzz";
+        element.classList.add("buzz");
+        //console.log("Buzz");
     } else {
-        console.log(i);
+        element.textContent = i;
     }
+
+    container.appendChild(element);
 }
